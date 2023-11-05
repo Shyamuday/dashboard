@@ -1,0 +1,16 @@
+@import "src/assets/_variables.scss";
+.chart-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  .sales-chart {
+    background: $color-7;
+  }
+  .balance-graph {
+    background: $color-7;
+    margin: 0 20px;
+  }
+  .product-chart {
+    background: $color-7;
+  }
+}

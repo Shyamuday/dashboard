@@ -1,0 +1,122 @@
+@import "src/assets/_variables.scss";
+.main-container {
+  width: 100%;
+  .table-name {
+    padding: 16px 0 16px 12px;
+    label {
+      font-size: 20px;
+      font-weight: 300;
+      color: $color-11;
+    }
+  }
+
+  .table-container {
+    padding: 0 16px;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      th,
+      td {
+        text-align: left;
+        color: $color-11;
+        border-bottom: 1px solid $color-8;
+      }
+
+      th {
+        background-color: $color-7;
+        color: $color-11;
+      }
+      tr {
+        .circle-container {
+          width: 36px;
+          height: 36px;
+          position: relative;
+          img {
+            border-radius: 50%;
+          }
+          .circular-dot {
+            position: absolute;
+            height: 5px;
+            width: 5px;
+            right: 7px;
+            bottom: 7px;
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+            background: $color-15;
+          }
+        }
+      }
+
+      tr:nth-child(even) {
+        background-color: $color-7;
+      }
+
+      tr:hover {
+        background-color: $color-8;
+      }
+
+      .paid {
+        background: $color-15;
+        color: $color-7;
+      }
+      .failed {
+        background: $color-14;
+        color: $color-7;
+      }
+      .pending {
+        background: $color-16;
+        color: $color-7;
+      }
+      .user-detail {
+        .user-name {
+          font-size: 14px;
+        }
+        .user-country {
+          font-size: 10px;
+        }
+      }
+
+      .progress-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .progress-bar {
+          height: 10px;
+          border-radius: 3px;
+          background: $color-2;
+          //  background: $color-2;
+        }
+        .progress-value {
+        }
+      }
+
+      .more-button {
+        background: $color-8;
+        color: $color-16;
+        font-size: 10px;
+        margin: 10px;
+        padding: 6px;
+        border: none;
+        border-radius: 2px;
+
+        &:hover {
+          color: $color-7;
+          background: $color-2;
+        }
+      }
+
+      .progress {
+        height: 10%;
+        background-color: $color-2;
+        text-align: center;
+        color: #fff;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

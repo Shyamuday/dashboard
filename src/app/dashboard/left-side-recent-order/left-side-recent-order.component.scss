@@ -1,0 +1,71 @@
+@import "src/assets/_variables.scss";
+.main-container {
+  width: 100%;
+  background: $color-7;
+  .table-name {
+    padding: 16px 0 16px 12px;
+    label {
+      font-size: 20px;
+      font-weight: 300;
+      color: $color-11;
+    }
+  }
+
+  .table-container {
+    padding: 0 24px;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        color: $color-11;
+        border-bottom: 1px solid $color-8;
+      }
+
+      th {
+        background-color: $color-7;
+        color: $color-11;
+      }
+
+      tr:nth-child(even) {
+        background-color: $color-7;
+      }
+
+      tr:hover {
+        background-color: $color-8;
+      }
+
+      .status-container {
+        .paid {
+          background: $color-15;
+          background-color: aqua;
+          color: $color-7;
+        }
+        .failed {
+          background: $color-14;
+          color: $color-7;
+        }
+        .pending {
+          background: $color-16;
+          color: $color-7;
+        }
+      }
+    }
+  }
+
+  /* Add a pseudo-element to simulate the scrollbar */
+  &::before {
+    content: "";
+    width: 8px; /* Adjust the width as needed */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: $color-7; /* Match the background color of the container */
+  }
+}

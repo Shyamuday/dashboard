@@ -1,0 +1,51 @@
+<div class="main-container">
+  <div class="table-name">
+    <label>New User Registrations</label>
+  </div>
+
+  <div class="table-container">
+    <table class="data-table">
+      <!-- <thead>
+      <tr>
+      
+        <th>Picture</th>
+        <th>Name</th>
+        <th>Active</th>
+        <th>Country</th>
+        <th>Progress</th>
+      </tr>
+    </thead> -->
+      <tbody>
+        <tr *ngFor="let item of new_users">
+          <td>
+            <div class="circle-container">
+              <img
+                [src]="item.picture"
+                alt="{{ item.name }}"
+                width="32"
+                height="32"
+              />
+              <div class="circular-dot"></div>
+            </div>
+          </td>
+
+          <td class="user-detail">
+            <div class="user-name">{{ item.name }}</div>
+            <div class="user-country">{{ item.country }}</div>
+          </td>
+          <td>
+            <div class="progress-container">
+              <div class="progress-bar" [style.width.%]="item.progress"></div>
+              <div class="progress-value">{{ item.progress }}%</div>
+            </div>
+          </td>
+
+          <!-- <td>{{ item.isActive ? "Yes" : "No" }}</td> -->
+
+          <!-- <td> <div ngClass="progress-bar"></div> {{ item.progress }}%</td> -->
+          <td><button class="more-button">More</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

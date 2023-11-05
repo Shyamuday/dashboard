@@ -1,0 +1,37 @@
+<div class="main-container">
+  <div class="nav-bar">
+    <app-top-navigation></app-top-navigation>
+  </div>
+
+  <div class="body-container">
+    <div class="left navigation">
+      <app-left-navigation></app-left-navigation>
+    </div>
+
+    <div class="right-main-container">
+      <div class="top-container">
+        <app-top-data-chart
+          [cardData]="dashBoard.top_cards"
+        ></app-top-data-chart>
+      </div>
+
+      <div class="medium-container">
+        <div class="left-container">
+          <app-left-side-recent-order
+            [recent_order]="dashBoard.recent_orders"
+          ></app-left-side-recent-order>
+        </div>
+
+        <div class="right-container">
+          <app-right-side-new-user
+            [new_users]="dashBoard.new_users"
+          ></app-right-side-new-user>
+        </div>
+      </div>
+
+      <div class="bottom-container">
+        <app-bottom-graph-card></app-bottom-graph-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="card-container">
+  <ng-container *ngFor="let item of cardData">
+    <div class="main-card">
+      <div class="value">
+        <h1>{{ item.value }} %</h1>
+      </div>
+
+      <div class="text-content">
+        <div class="sub-header">{{ item.sub_header }}</div>
+        <div class="header">{{ item.header }}</div>
+      </div>
+    </div>
+  </ng-container>
+</div>

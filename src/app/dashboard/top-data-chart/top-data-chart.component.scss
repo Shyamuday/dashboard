@@ -1,0 +1,47 @@
+@import "src/assets/_variables.scss";
+.card-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .main-card {
+    background: $color-7;
+    padding: 20px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 3px;
+    .value {
+      h1 {
+        color: $color-2;
+      }
+    }
+
+    .text-content {
+      .sub-header {
+        color: $color-11;
+        font-size: 24px;
+      }
+      .header {
+        color: $color-12;
+        font-size: 16px;
+      }
+    }
+
+    &:hover {
+      background: $color-2;
+      .value {
+        h1 {
+          color: $color-7;
+        }
+      }
+      .text-content {
+        .sub-header {
+          color: $color-7;
+        }
+        .header {
+          color: $color-7;
+        }
+      }
+    }
+  }
+}

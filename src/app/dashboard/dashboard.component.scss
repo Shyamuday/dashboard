@@ -1,0 +1,44 @@
+@import "src/assets/_variables.scss";
+
+.main-container {
+  .nav-bar {
+    position: static;
+  }
+
+  .body-container {
+    display: flex;
+    width: 100%;
+    background-color: $color-8;
+    .left navigation {
+      position: static;
+    }
+    .right-main-container {
+      width: 100%;
+      margin: 20px;
+      .top-container {
+        width: auto;
+      }
+      .medium-container {
+        display: flex;
+        align-items: center;
+        .left-container {
+          width: 70%;
+          margin: 10px;
+          background: $color-7;
+          overflow: auto;
+          max-height: 200px;
+          overflow: auto;
+        }
+        .right-container {
+          width: 30%;
+          background: $color-7;
+          max-height: 200px;
+          overflow: auto;
+        }
+      }
+      .bottom-container {
+        width: 100%;
+      }
+    }
+  }
+}
