@@ -120,3 +120,58 @@
     }
   }
 }
+// .container {
+//   width: 90%;
+// }
+// .parent {
+//   display: flex;
+//   flex-direction: column;
+//   background: black;
+//   border-radius: 5px;
+//   align-items: center;
+//   padding: 10px;
+//   margin: 5px 0;
+// }
+
+// .other-contents {
+//   background: grey;
+//   opacity: 0.3;
+//   width: 95%;
+//   margin: 20px;
+//   display: block;
+//   height: 40px;
+// }
+
+// .content-wrapper {
+//   display: flex;
+//   align-items: center;
+//   width: 100%;
+//   overflow-x: auto;
+//   overflow-y: hidden;
+//   scroll-behavior: smooth;
+// }
+
+// .content-wrapper div {
+//   background: grey;
+//   margin: 3px;
+//   padding: 3px;
+//   color: white;
+// }
+
+// .content-wrapper div:first-child {
+//   background: green;
+// }
+
+// .content-wrapper div:last-child {
+//   background: red;
+// }
+
+.magic-wrapper {
+  // height: 35px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+// .magic {
+//   padding-bottom: 30px;
+// }

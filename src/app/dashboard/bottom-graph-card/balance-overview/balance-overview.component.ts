@@ -10,18 +10,20 @@ export class BalanceOverviewComponent {
 
   Highcharts: typeof Highcharts = Highcharts;
 
-  data = [{
-    name: "BORROW",
-    data: [60, 150, 98, 48, 45, 125, 49, 10, 80, 190, 100, 52],
-    type: "column",
-    color: '#7481a0'
-  },
-  {
-    name: "INCOME",
-    data: [50, 142, 90, 42, 34, 110, 38, 6, 70, 175, 90, 45],
-    type: "column",
-    color: '#506ddf'
-  }];
+  data = [
+    {
+      name: "INCOME",
+      data: [50, 142, 90, 42, 34, 110, 38, 6, 70, 175, 90, 45],
+      type: "column",
+      color: '#506ddf'
+    },
+    {
+      name: "BORROW",
+      data: [60, 150, 98, 48, 45, 125, 49, 10, 80, 190, 100, 52],
+      type: "column",
+      color: '#d0d2d9'
+    },
+  ];
 
 
   chartOptions = {
