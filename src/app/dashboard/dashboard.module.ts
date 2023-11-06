@@ -13,7 +13,7 @@ import { SalesStaticsComponent } from './bottom-graph-card/sales-statics/sales-s
 import { BalanceOverviewComponent } from './bottom-graph-card/balance-overview/balance-overview.component';
 import { TopProductsComponent } from './bottom-graph-card/top-products/top-products.component';
 import { TopDataChartComponent } from './top-data-chart/top-data-chart.component';
-
+import { HighchartsChartModule } from 'highcharts-angular';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -31,6 +31,7 @@ import { TopDataChartComponent } from './top-data-chart/top-data-chart.component
     CommonModule,
     DashboardRoutingModule,
     NgApexchartsModule,
+    HighchartsChartModule
 
   ]
 })
